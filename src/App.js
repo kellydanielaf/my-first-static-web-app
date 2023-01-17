@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import cma from "../api/management_api";
-import { AppContext } from "../context";
+import cma from "./api/management_api";
+import { AppContext } from "./context";
 
 function App() {
   const value = 'World';
