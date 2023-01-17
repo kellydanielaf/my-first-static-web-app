@@ -325,19 +325,19 @@ export default {
     // //         })
     // //     })
     // // },
-    // createEntry(contentTypeUid, payload) {
-    //     return new Promise((resolve, reject) => {
-    //         stack.contentType(contentTypeUid).entry().create({ entry: payload })
-    //             //.fetch()
-    //             .then((result) => {
-    //                 resolve(result);
-    //             }, 
-    //                 (error) => {
-    //                     reject(error);
-    //                 },
-    //             );
-    //     });
-    // },
+     createEntry(contentTypeUid, payload) {
+         return new Promise((resolve, reject) => {
+             stack.contentType(contentTypeUid).entry().create({ entry: payload })
+                 //.fetch()
+                 .then((result) => {
+                     resolve(result);
+                 },
+                     (error) => {
+                         reject(error);
+                     },
+                 );
+         });
+     },
     // async createCopyFromPayload(contentTypeUid, payload) {
     //     const newEntry = this.cleanEntryForCopy(payload);
     //     return await this.createEntry(contentTypeUid, newEntry);
