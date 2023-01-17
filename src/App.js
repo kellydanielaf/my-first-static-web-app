@@ -6,7 +6,7 @@ function App() {
   return (<>
             <div>Hello the {value}</div>
             <div>
-              <button title="Press me" color="#f194ff" onclick="myFunction()">Button <\button>
+              <button title="Press me" color="#f194ff" onclick="myFunction()">Button </button>
                 <script>
                   function myFunction() {
                     alert("Your file is being uploaded!")
